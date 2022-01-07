@@ -30,11 +30,11 @@ class Solution {
                 TreeNode rem=q.remove();
                 if(rem.left!=null)q.add(rem.left);
                 if(rem.right!=null)q.add(rem.right);
-                System.out.print(rem.val+" ");
+            //    System.out.print(rem.val+" ");
                 min=Math.min(min,rem.val);
                 max=Math.max(max,rem.val);
             }
-            System.out.println();
+          //  System.out.println();
             ans=Math.max(ans,max-min+1);
             
         }
