@@ -40,7 +40,6 @@ class Solution {
                     max=Math.max(max,dp[i-1][k]+A[j-1]-A[k-1]);
                 }
                 dp[i][j]=max;
-            //    System.out.print(dp[i][j]+" ");
             }
            // System.out.println();
         }
