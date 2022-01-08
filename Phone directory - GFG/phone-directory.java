@@ -60,11 +60,6 @@ class Solution{
             l.add(str.toString());
         }
            for(int i=0;i<26;i++){
-              if(node.child[i]!=null){ 
-                 
-                 
-                 }
-                  
                   wordsStartsWithHelper(node.child[i],l,str.append((char)('a'+i)));
                str.deleteCharAt(str.length()-1);
               }
