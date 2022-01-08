@@ -54,7 +54,6 @@ class Solution {
 			while (!q.isEmpty() && arr[q.peekLast()] <= arr[i]) {
 				q.pollLast();
 			}
-            
 			q.offer(i);
 			if (i >= k - 1) {
 				ans.add(arr[q.peek()]);
