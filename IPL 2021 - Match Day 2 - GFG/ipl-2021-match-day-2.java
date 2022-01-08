@@ -51,7 +51,6 @@ class Solution {
 			if (!q.isEmpty() && q.peek() == i - k) {
 				q.poll();
 			}
-			// remove smaller numbers in k range as they are useless
 			while (!q.isEmpty() && arr[q.peekLast()] <= arr[i]) {
 				q.pollLast();
 			}
