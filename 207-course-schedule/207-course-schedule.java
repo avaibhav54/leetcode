@@ -31,7 +31,7 @@ class Solution {
             }
             
         }
-        System.out.println(count);
+       // System.out.println(count);
         return count>=numCourses;
     }
 }
