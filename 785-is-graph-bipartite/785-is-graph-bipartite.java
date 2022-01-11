@@ -19,6 +19,7 @@ class Solution {
         {
             if(color[x]==-1)
             {
+             //   System.out.println(color[src]);
                 color[x]=1-color[src];
                 if(!bipart(graph,color,x))return false;
             }
