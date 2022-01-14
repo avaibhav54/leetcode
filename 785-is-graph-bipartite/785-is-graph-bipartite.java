@@ -14,6 +14,7 @@ class Solution {
     }
     public static boolean bipart(int graph[][],int color[],int src)
     {
+        
      
         for(int x:graph[src])
         {
