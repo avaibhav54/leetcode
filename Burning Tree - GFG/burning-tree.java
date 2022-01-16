@@ -133,34 +133,30 @@ class Solution
         return ans;
         // Your code goes here
     }
-    public static void height(Node node,Node block,int tim)
+    public static int height(Node node,Node block)
     {
-        if(node==null || node==block)return;
-                ans=Math.max(ans,tim);
-
-        height(node.left,block,tim+1);
-        height(node.right,block,tim+1);
-        
+        if(node==null || node==block)return -1;
+        return 1+Math.max(height(node.left,block),height(node.right,block));
     }
     public static int help(Node node,int target)
     {
         if(node==null)return -1;
          if(node.data==target)
       {
-           height(node,null,0);
+           ans=Math.max(ans,height(node,null));
           return 1;
           
       }
       int ld=help(node.left,target);
       if(ld!=-1)
       {
-          height(node,node.left,ld);
+          ans=Math.max(ans,ld+height(node,node.left));
           return ld+1;
       }
       int rd=help(node.right,target);
       if(rd!=-1)
       {
-          height(node,node.right,rd);
+          ans=Math.max(ans,rd+height(node,node.right));
           return rd+1;
       }
       
