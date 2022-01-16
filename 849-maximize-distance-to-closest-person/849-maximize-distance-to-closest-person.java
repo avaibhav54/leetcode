@@ -35,7 +35,6 @@ class Solution {
 		int c = b, l = 0;
 		for (; i < n; i++) {
 			if (v[i] == 0)
-				
 				c++;
 			else {
 				l = Math.max(l, c);
