@@ -29,11 +29,16 @@ class Solution
     public int nthPoint(int n)
     {
         if(n<3)return n;
-        int dp[]=new int[n+1];
-        dp[1]=1;
-        dp[2]=2;
+        int x1=1;
+        int x2=2;
         int mod=1000000007;
-        for(int i=3;i<=n;i++)dp[i]=(dp[i-1]%mod+dp[i-2]%mod)%mod;
-        return dp[n];
+        for(int i=3;i<=n;i++){
+            int z=(x1%mod + x2%mod)%mod;
+            x1=x2;
+            x2=z;
+            if(i==n)return z;
+        }
+       // return dp[n];
+       return 0;
     }
 }
