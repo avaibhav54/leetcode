@@ -18,10 +18,11 @@ class Solution {
                     len+=map2.get(cd);
                     
                 }
+                else len++;
                 map1.put(cd,len);
                 ans=Math.max(ans,len);
             }
         }
-        return ans+1;
+        return ans;
     }
 }
