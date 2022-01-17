@@ -30,8 +30,6 @@ class Solution {
                     f=true;
                     grid[nr][nc]=2;
                     que.add(new Pair(nr,nc));
-
-                    
                 }
                 
             }
