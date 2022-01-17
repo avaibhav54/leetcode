@@ -17,23 +17,19 @@ class Solution {
         while(que.size()>0)
         {
             boolean f=false;
-       
             int x=que.size();
             int arr[][]={{0,1},{1,0},{-1,0},{0,-1}};
             while(x-->0)
             {
-                     Pair r=que.remove();
-                
+                Pair r=que.remove();
                 for(int k=0;k<4;k++)
                 {
                     int nr=r.indi+arr[k][0];
                     int nc=r.indj+arr[k][1];
                     if(nr<0 || nc<0 || nr>=grid.length || nc>=grid[0].length || grid[nr][nc]!=1)continue;
-                
-                    
-                        f=true;
-                        grid[nr][nc]=2;
-                        que.add(new Pair(nr,nc));
+                    f=true;
+                    grid[nr][nc]=2;
+                    que.add(new Pair(nr,nc));
 
                     
                 }
