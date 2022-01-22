@@ -91,9 +91,10 @@ class Solution
             return "-1";
         }
         
-        if(N.length()%2!=0){
             String result = "";
             result += nextper;
+            
+        if(N.length()%2!=0)
             result += N.charAt(N.length()/2);
             
             StringBuilder rev = new StringBuilder(nextper);
@@ -101,18 +102,8 @@ class Solution
             result += rev.toString();
             
             return result;
-        }
+       
         
-        else{
-            String result = "";
-            result += nextper;
-            
-            
-            StringBuilder rev = new StringBuilder(nextper);
-            rev.reverse();
-            result += rev.toString();
-            
-            return result;
-        }
+    
     }
 }
