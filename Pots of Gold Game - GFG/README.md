@@ -1,5 +1,5 @@
 # Pots of Gold Game
-## Medium 
+##  Medium 
 <div class="problem-statement">
                 <p></p><p><span style="font-size:18px">Two players <strong>X</strong> and <strong>Y</strong> are playing a game in which there are pots of gold arranged in a line, each containing some gold coins. They get alternating turns in which the player can pick a pot from one of the ends of the line. The winner is the player who has a higher number of coins at the end. The objective is to <strong>maximize</strong> the number of coins collected by <strong>X</strong>, assuming <strong>Y</strong> also plays optimally.</span></p>
 
